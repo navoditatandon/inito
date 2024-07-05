@@ -1,0 +1,157 @@
+/* General styles */
+.header {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mobile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.inito-svg {
+    width: 110px;
+    height: 35px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #112D35;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #1f94aa;
+}
+
+.try-button {
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: #1f94aa;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 26px;
+    margin-right: 40px;
+}
+
+.try-button:hover {
+    background-color: #176b7a;;
+}
+
+/* Hamburger menu icon for mobile view */
+.menu-icon {
+    cursor: pointer;
+    display: none; /* Initially hide for web view */
+}
+
+.hamburger {
+    width: 30px; /* Adjust size of hamburger icon */
+    height: 30px; /* Adjust size of hamburger icon */
+    fill: #112D35; /* Color of the hamburger icon */
+    padding-top: 20px;
+}
+
+/* Media query for mobile styles */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 20px; /* Adjust padding for mobile */
+    }
+
+    .nav {
+        display: none; /* Hide nav links on mobile */
+    }
+
+    .logo-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon.active {
+        display: flex; /* Show hamburger icon when active */
+        align-items: center;
+        justify-content: center;
+        color: #112D35;
+        font-size: 24px;
+        padding-right: 30px;
+    }
+
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-link:hover {
+        color: #1f94aa;
+    }
+
+    .nav.active a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .inito-svg {
+        order: 2; /* Ensure logo comes after hamburger in mobile view */
+        margin-left: auto; /* Push logo and button to the right */
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .try-button {
+        order: 3; /* Ensure button comes last in mobile view */
+        margin-left: 10px; /* Adjust spacing between logo and button */
+        margin-right:40px ;
+    }
+
+    .try-button:hover {
+        background-color: #176b7a;;
+    }
+}

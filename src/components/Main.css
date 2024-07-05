@@ -1,0 +1,12 @@
+.main {
+    padding-top: 80px; /* Add padding to ensure content doesn't overlap with the fixed header */
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+}
