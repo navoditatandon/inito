@@ -63,7 +63,25 @@
     margin: 0 10px; /* Adjust margin between icons */
 }
 
-/* Media query for smaller screens */
+.button {
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #1f94aa;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 26px;
+    margin: 20px;
+    left: 0;
+}
+
+.button:hover {
+    background-color: #176b7a;
+}
+
 @media (max-width: 768px) {
     .left-component {
         width: 100%; /* Full width for left component */
@@ -87,10 +105,29 @@
     }
 
     .footer-icons {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Wrap icons in mobile view */
     }
 
     .footer-icons img {
         margin: 5px; /* Adjust margin between icons */
     }
+
+    .button {
+        width: 200px;
+        height: 40px;
+        color: white;
+        background-color: #1f94aa;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 26px;
+        margin: auto; /* Center the button horizontally */
+        display: block; /* Ensure it takes full width available */
+    }
+    
+    .button:hover {
+        background-color: #176b7a;
+    }    
 }

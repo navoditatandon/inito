@@ -51,9 +51,19 @@ const Page1 = () => {
                         <strong>in 10 minutes</strong>
                     </div> 
                     Get accurate results of <strong>Estrogen, LH, Progesterone metabolite PdG and FSH</strong>with Inito, the all-in-one, FDA-registered fertility monitor.
+                    {!isMobile && (
+                        <div className="button-container">
+                            <button className="button">How does inito work</button>
+                        </div>
+                    )}
                 </div>
                 <div className="right-component" style={{ opacity }}>
                     {imageUrl && <img src={imageUrl} alt="Right Component Image" />}
+                    {isMobile && (
+                        <div className="button-container">
+                            <button className="button">How does inito work</button>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="page1-footer">
