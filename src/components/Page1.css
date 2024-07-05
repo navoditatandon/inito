@@ -50,6 +50,19 @@
     margin-top: 20px; /* Adjust margin as needed */
 }
 
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.footer-icons img {
+    width: auto;
+    height: 30px; /* Adjust height as needed */
+    margin: 0 10px; /* Adjust margin between icons */
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .left-component {
@@ -71,5 +84,13 @@
 
     .page1-footer {
         margin-top: 20px; /* Adjust margin as needed */
+    }
+
+    .footer-icons {
+        flex-wrap: wrap;
+    }
+
+    .footer-icons img {
+        margin: 5px; /* Adjust margin between icons */
     }
 }
