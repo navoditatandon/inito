@@ -1,12 +1,75 @@
-.main {
-    padding-top: 80px; /* Add padding to ensure content doesn't overlap with the fixed header */
+.page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure vertical stacking */
+    height: 100vh;
+    background-image: url("https://s3-alpha-sig.figma.com/img/0679/b7bd/c9d666368879132169f08715bf21847f?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ij3m5rjULEcbgEi~nKWou4Pv00YhQLN8ly1h9ochfWViRQm9AIza9nwQCn6WIJ0c0nhgwLkaPkKxyy9EYCTpyKz7qtFIlCjIsEUdNRgI~0rFgMmnpclF1jvD-qHRzREUNeqCnAlPk4GXJ6ktWSGFKNSru0Wol9NL8iic68YLY9rIhr2nU6E~L1P4jgmxu~Xm~UAogJpXaPbCElV6JEdEIIhbP5AgY3NGoLU~l5I5fqGxqACl-9jNTKQVNPVwDZZTPyscqoe8y5tNQkKOT5FjZ~i1wZnn0PTJjpzyvNyUnqutap1eSFlqCI9HuEQMEuL9fbnkAqDjHFRxSZuF4WDV6w__");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px; /* Adjust padding as needed */
 }
 
-.main-content {
-    padding: 20px;
+.left-right-container {
+    display: flex;
+    justify-content: space-between; /* Ensure space between left and right components */
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Center align horizontally */
 }
 
-.main-content img {
-    max-width: 100%;
+.left-component {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+}
+
+.right-component {
+    width: 50%; /* Adjust width as needed */
+    max-width: 817px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 1; /* Initial opacity set to 1 */
+    position: relative;
+}
+
+.right-component img {
+    width: 100%;
     height: auto;
+    display: block; /* Ensures image scales correctly */
+}
+
+.page1-footer {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: #C4C4C4;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .left-component {
+        width: 100%; /* Full width for left component */
+        order: 1; /* Display left component first */
+        margin-bottom: 20px; /* Example margin for spacing */
+    }
+
+    .right-component {
+        width: 100%; /* Full width for right component */
+        max-width: none; /* Reset max-width for responsiveness */
+        order: 2; /* Display right component second */
+    }
+
+    .left-right-container {
+        flex-direction: column; /* Stack components vertically */
+        align-items: center; /* Center align items vertically */
+    }
+
+    .page1-footer {
+        margin-top: 20px; /* Adjust margin as needed */
+    }
 }
