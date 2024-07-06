@@ -1,0 +1,79 @@
+/* General styles for the mobile footer */
+.footer {
+    background-color: #112D35;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for social media icons */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.social-icons svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+/* Styling for each footer section */
+.footer-section {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.footer-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #1E434E;
+}
+
+.footer-heading h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Styling for accordion icon */
+.accordion-icon {
+    font-size: 20px;
+}
+
+.accordion-icon.open {
+    transform: rotate(180deg);
+}
+
+/* Styling for footer list items */
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.footer-list.active {
+    max-height: 200px; /* Adjust as per your content height */
+    transition: max-height 0.3s ease-in;
+}
+
+.footer-list li {
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-list li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,39 @@
+.web-footer {
+    background-color: #112D35;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 40px; /* Adjust padding as needed */
+}
+
+.footer-content-web {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust alignment as needed */
+}
+
+.footer-column-web {
+    flex: 1;
+}
+
+.footer-heading-web {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-list-web {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list-web li {
+    margin-bottom: 8px;
+}
+
+.social-icons-web {
+    display: flex;
+    gap: 10px;
+}
+
+/* Adjust styles for social icons as needed */
