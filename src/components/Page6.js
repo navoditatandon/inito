@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Page6.css'; 
 import Content5 from './content5';
 
-const Page4 = () => {
+const Page6 = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -48,5 +48,5 @@ const Page4 = () => {
     );
 }
 
-export default Page4;
+export default Page6;
 

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './Page6.css'; 
-import Content6 from './content6';
+import './Page7.css'; 
+import Content7 from './Content7';
 
-const Page4 = () => {
+const Page7 = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -18,18 +18,18 @@ const Page4 = () => {
     }, []);
 
     return (
-        <div className="page6-outline">
-            <div className='page6-container'>
+        <div className="page7-outline">
+            <div className='page7-container'>
                     {/* Web View */}
                     {!isMobile && (
                         <div className="web-view">
                             <div className='left-component'>
-                            <Content6 />
+                                 <div className="image-container">
+                                    <img src="https://s3-alpha-sig.figma.com/img/54ec/9438/ab258946f5802c9bb01a282c4e6fbde6?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MUOeDdpfxVziuuWfD0phrmkQNPax3tizqnN~-mCPDQ-DcB-lt5YZ2FLzbLRw5m9YPtajCW08PNMJVaKBJp4d6t0iSch308n70R2TarI5lLmcVmJMURkzBE4D1pfrrrRtqnjt4jvO9fq0dAFGnYoNtfmZ9zJpa3PQmNiT49Xps3OmMO90pv~qSzhFDMa9W0491tYKtBjz1VEUoPCM7yW6677Da4RHprOE25CiNXw3TMv6VTtAoFkl2bApm4efmBqZKHEyeMFf-e-n9BfBmd50TGJ~mZWZ9F3~Ez7-s1o0vjqUGozbKTrjeiV6BquaEGljE6jpY3KixaETZm8BNpx2pg__" alt="Mobile Image" />
+                                </div>
                             </div>
                             <div className='right-component'>
-                                <div className="image-container">
-                                        <img src="https://s3-alpha-sig.figma.com/img/8adc/2fed/45343031db68c06ee46c807afe1d3245?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ws-stVOTT9tL1FwBSX9kzQUSg70rRHhWXmShKODRdJ4i~358H5nOlkmHA-lqKQ3avoWXsQAu9Rubde-0sYLGHMUdnJ6onS3lg4YHO35mwmzc25VD7yE8S-j2S2GAfdlUc8r9yP9eC7Xk3rgx7w9LGrMXsn1GjHNV9739H1KzW1FgJ5MU-23uQ4zNvhSGeuoV7AeFdwnEcBnX5lmC9vUkZ5I49d5Xe3Txw6HZRQ80o~VXPWYhiRgnYP-x0SjXMLeBZGAI7CTw70ExK13RcQKpmsrcgISnk8R2rqJRsNADFwMSNcWIJzeokLc8Q0Yeq2uGe~-p40hBFDM0mBin2TU7fw__" alt="Lady Image" />
-                                </div>
+                                <Content7 />
                             </div>
                         </div>
                     )}
@@ -37,9 +37,9 @@ const Page4 = () => {
                     {/* Mobile View */}
                     {isMobile && (
                         <div className="mobile-view">
-                            <Content6 />
-                            <div className="bottom-image">
-                                <img src="https://s3-alpha-sig.figma.com/img/8adc/2fed/45343031db68c06ee46c807afe1d3245?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ws-stVOTT9tL1FwBSX9kzQUSg70rRHhWXmShKODRdJ4i~358H5nOlkmHA-lqKQ3avoWXsQAu9Rubde-0sYLGHMUdnJ6onS3lg4YHO35mwmzc25VD7yE8S-j2S2GAfdlUc8r9yP9eC7Xk3rgx7w9LGrMXsn1GjHNV9739H1KzW1FgJ5MU-23uQ4zNvhSGeuoV7AeFdwnEcBnX5lmC9vUkZ5I49d5Xe3Txw6HZRQ80o~VXPWYhiRgnYP-x0SjXMLeBZGAI7CTw70ExK13RcQKpmsrcgISnk8R2rqJRsNADFwMSNcWIJzeokLc8Q0Yeq2uGe~-p40hBFDM0mBin2TU7fw__" alt="Lady Image" />
+                            <Content7 />
+                            <div className="bottom-image-mobile">
+                                <img src="https://s3-alpha-sig.figma.com/img/54ec/9438/ab258946f5802c9bb01a282c4e6fbde6?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MUOeDdpfxVziuuWfD0phrmkQNPax3tizqnN~-mCPDQ-DcB-lt5YZ2FLzbLRw5m9YPtajCW08PNMJVaKBJp4d6t0iSch308n70R2TarI5lLmcVmJMURkzBE4D1pfrrrRtqnjt4jvO9fq0dAFGnYoNtfmZ9zJpa3PQmNiT49Xps3OmMO90pv~qSzhFDMa9W0491tYKtBjz1VEUoPCM7yW6677Da4RHprOE25CiNXw3TMv6VTtAoFkl2bApm4efmBqZKHEyeMFf-e-n9BfBmd50TGJ~mZWZ9F3~Ez7-s1o0vjqUGozbKTrjeiV6BquaEGljE6jpY3KixaETZm8BNpx2pg__" alt="Lady Image" />
                             </div>
                         </div>
                     )}
@@ -48,5 +48,5 @@ const Page4 = () => {
     );
 }
 
-export default Page4;
+export default Page7;
 
