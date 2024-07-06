@@ -1,5 +1,4 @@
-/* Page5.css */
-.page5-outline {
+.page6-outline {
     background-color: #E1F4FA;
     padding: 20px; /* Add padding to provide space around the container */
     display: flex; /* Use flexbox to center the container */
@@ -8,15 +7,23 @@
     min-height: 60vh; /* Ensure it covers the full viewport height */
 }
 
-.page5-container {
+.page6-container {
     background: white;
     box-shadow: 4px 4px 14px 0px #122D351F;
-    padding: 20px;
     width: 844px;
     height: auto;
     gap: 0px;
     border-radius: 20px;
     opacity: 0.9;
+}
+
+.left-container {
+    width: 70%;
+}
+
+.right-container {
+    width: 40%;
+    height: 50px;
 }
 
 .page5-container h4 {
@@ -43,7 +50,6 @@
 .mobile-view {
     background: white;
     box-shadow: 4px 4px 14px 0px #122D351F;
-    padding: 20px;
     width: 90%; /* Adjust width for mobile view */
     margin: 0 auto; /* Center horizontally */
     border-radius: 20px;
@@ -70,11 +76,6 @@
     color: #333; /* Added to ensure text color is readable */
 }
 
-.bottom-image {
-    width: 54px;
-    height: 54px;
-}
-
 .bottom-image-container {
     width: 354px;
     height: 54px;
@@ -83,4 +84,13 @@
     opacity: 0px;
     display: flex;
     align-items: center;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
 }
