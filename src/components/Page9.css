@@ -1,0 +1,118 @@
+.page9-outline {
+    background-color: #E1F4FA;
+    padding: 20px; /* Add padding to provide space around the container */
+    display: flex; /* Use flexbox to center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 60vh; /* Ensure it covers the full viewport height */
+}
+
+.page9-container {
+    background: white;
+    box-shadow: 4px 4px 14px 0px #122D351F;
+    width: 844px;
+    height: auto;
+    gap: 0px;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.left-container {
+    width: 40%;
+}
+
+.right-container {
+    width: 60%;
+    height: 50px;
+}
+
+.page9-container h4 {
+    color: #1F94AA;
+}
+
+.page9-container p {
+    line-height: 1.5; /* Added for better readability */
+    padding-right: 80px;
+}
+
+.page9-container p strong {
+    color: #333; /* Optional: Strong text color adjustment */
+}
+
+.page9-container p:last-child {
+    color: #A0ABAE;
+}
+
+.page9-container h2 {
+    color: #333; /* Added to ensure text color is readable */
+}
+
+/* Mobile View Styles */
+.mobile-view {
+    background: white;
+    box-shadow: 4px 4px 14px 0px #122D351F;
+    width: 90%; /* Adjust width for mobile view */
+    margin: 0 auto; /* Center horizontally */
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.mobile-view h4 {
+    color: #1F94AA;
+}
+
+.mobile-view p {
+    line-height: 1.5; /* Added for better readability */
+}
+
+.mobile-view p strong {
+    color: #333; /* Optional: Strong text color adjustment */
+}
+
+.mobile-view p:last-child {
+    color: #A0ABAE;
+}
+
+.mobile-view h2 {
+    color: #333; /* Added to ensure text color is readable */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.bottom-image-mobile {
+    margin-top: 20px;
+}
+
+.bottom-image-mobile img {
+    max-width: 100%;
+}
+
+.image-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Adjust gap as needed */
+}
+
+.image-card img {
+    flex: 1 1 calc(50% - 10px); /* Two images per row */
+    max-width: calc(50% - 10px);
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .image-card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-card img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
