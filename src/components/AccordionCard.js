@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import './AccordionCard.css'; // Ensure to import your CSS file
 
-const AccordionCard = ({ title, content }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
+const AccordionCard = ({ item, expanded, onClick }) => {
+    const handleClick = () => {
+        onClick(item.id);
     };
 
     return (
-        <div className={`accordion-card ${isOpen ? 'open' : ''}`}>
-            <div className="accordion-header" onClick={toggleAccordion}>
-                <h2 style={{marginRight: "20px"}}>{title} {isOpen ? '-' : '+'}</h2>
+        <div className="accordion-card">
+            <div className="accordion-header" onClick={handleClick}>
+                <h4>{item.title}</h4>
+                <span className={`accordion-icon ${expanded ? 'expanded' : 'collapsed'}`}>
+                    {expanded ? '-' : '+'}
+                </span>
             </div>
-            <div className="accordion-content">
-                {isOpen && <p>{content}</p>}
+            <div className={`accordion-content ${expanded ? 'expanded' : 'collapsed'}`}>
+                {expanded && <p>{item.content}</p>}
             </div>
         </div>
     );

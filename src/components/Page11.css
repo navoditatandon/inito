@@ -2,6 +2,11 @@
     padding: 20px;
 }
 
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .accordion-grid {
     display: flex;
     flex-wrap: wrap;
@@ -12,9 +17,45 @@
     flex: 1;
 }
 
-@media (min-width: 768px) {
-    .accordion-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns layout for web view */
-    }
+.accordion-card {
+    border: 1px solid #F7F7FE;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px; /* Increased padding for better touch area */
+    cursor: pointer;
+    background-color: #F7F7FE;
+    min-height: 24px; /* Fixed header height */
+    transition: background-color 0.3s ease, min-height 0.3s ease; /* Added transition for min-height */
+}
+
+.accordion-content {
+    padding: 16px 20px; /* Increased padding */
+    background-color: #F7F7FE;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Transition for max-height */
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+.accordion-content.expanded {
+    max-height: 300px; /* Adjust as needed based on your content size */
+}
+
+.accordion-icon {
+    font-size: 20px;
+}
+
+.accordion-content:not(.expanded) {
+    max-height: 34px; /* Only show title when collapsed */
+    transition: max-height 0.3s ease-out;
 }

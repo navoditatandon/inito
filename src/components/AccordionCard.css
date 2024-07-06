@@ -1,31 +1,45 @@
 .accordion-card {
-    width: 490px;
-    padding: 12px 32px;
+    border: 1px solid #F7F7FE;
+    border-radius: 8px;
+    overflow: hidden;
     margin-bottom: 10px;
-    border-radius: 24px;
-    background-color: #F7F7FE;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.accordion-card h2 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
+.accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.accordion-card:hover {
-    background-color: #EAEAEA;
+    padding: 16px 20px; /* Increased padding for better touch area */
+    cursor: pointer;
+    background-color: #F7F7FE;
+    min-height: 24px; /* Fixed header height */
+    transition: background-color 0.3s ease, min-height 0.3s ease; /* Added transition for min-height */
 }
 
 .accordion-content {
-    display: none;
-    padding: 10px 0;
+    padding: 16px 20px; /* Increased padding */
+    background-color: #F7F7FE;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Transition for max-height */
 }
 
-.accordion-card.open .accordion-content {
-    display: block;
+.accordion-content p {
+    margin: 0;
+}
+
+.accordion-content.expanded {
+    max-height: 300px; /* Adjust as needed based on your content size */
+}
+
+.accordion-icon {
+    font-size: 20px;
+}
+
+.accordion-icon.expanded {
+    font-size: 20px;
+}
+
+.accordion-content.collapsed {
+    max-height: 20px;
 }
