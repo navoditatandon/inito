@@ -1,0 +1,31 @@
+.accordion-card {
+    width: 490px;
+    padding: 12px 32px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    background-color: #F7F7FE;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-card h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-card:hover {
+    background-color: #EAEAEA;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 0;
+}
+
+.accordion-card.open .accordion-content {
+    display: block;
+}

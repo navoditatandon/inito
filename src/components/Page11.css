@@ -1,0 +1,20 @@
+.page-11-container {
+    padding: 20px;
+}
+
+.accordion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .accordion-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout for web view */
+    }
+}

@@ -18,8 +18,8 @@ const Page9 = () => {
     }, []);
 
     return (
-        <div className="page7-outline">
-            <div className='page7-container'>
+        <div className="page9-outline">
+            <div className='page9-container'>
                     {/* Web View */}
                     {!isMobile && (
                         <div className="web-view">
