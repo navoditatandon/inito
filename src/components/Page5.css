@@ -1,0 +1,86 @@
+/* Page5.css */
+.page5-outline {
+    background-color: #E1F4FA;
+    padding: 20px; /* Add padding to provide space around the container */
+    display: flex; /* Use flexbox to center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+.page5-container {
+    background: white;
+    box-shadow: 4px 4px 14px 0px #122D351F;
+    padding: 20px;
+    width: 844px;
+    height: auto;
+    gap: 0px;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.page5-container h4 {
+    color: #1F94AA;
+}
+
+.page5-container p {
+    line-height: 1.5; /* Added for better readability */
+}
+
+.page5-container p strong {
+    color: #333; /* Optional: Strong text color adjustment */
+}
+
+.page5-container p:last-child {
+    color: #A0ABAE;
+}
+
+.page5-container h2 {
+    color: #333; /* Added to ensure text color is readable */
+}
+
+/* Mobile View Styles */
+.mobile-view {
+    background: white;
+    box-shadow: 4px 4px 14px 0px #122D351F;
+    padding: 20px;
+    width: 90%; /* Adjust width for mobile view */
+    margin: 0 auto; /* Center horizontally */
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.mobile-view h4 {
+    color: #1F94AA;
+}
+
+.mobile-view p {
+    line-height: 1.5; /* Added for better readability */
+}
+
+.mobile-view p strong {
+    color: #333; /* Optional: Strong text color adjustment */
+}
+
+.mobile-view p:last-child {
+    color: #A0ABAE;
+}
+
+.mobile-view h2 {
+    color: #333; /* Added to ensure text color is readable */
+}
+
+.bottom-image {
+    width: 54px;
+    height: 54px;
+}
+
+.bottom-image-container {
+    width: 354px;
+    height: 54px;
+    top: 3142px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+}

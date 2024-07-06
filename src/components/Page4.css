@@ -1,0 +1,44 @@
+.page-four-container {
+    background-color: #e0eff4;
+}
+
+.left-component {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 50px 20px 50px;
+}
+
+.heading {
+    font-weight: 800;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits inside its container */
+}
+
+.bottom-image {
+    margin-top: 20px;
+}
+
+.bottom-image img {
+    max-width: 100%;
+}

@@ -45,7 +45,7 @@ const Page1 = () => {
             <div className="left-right-container">
                 <div className="left-component">
                     <FiveStars /> Trusted By 20,000+ couples
-                    <div style={{ lineHeight: "1.2", marginTop: "18px", fontSize: "48px", padding:"20px" }}>
+                    <div style={{ lineHeight: "1", marginTop: "18px", fontSize: "45px", padding:"20px" }}>
                         <strong>Track your fertility</strong> <br/> 
                         <strong>hormones at home,</strong> <br/> 
                         <strong>in 10 minutes</strong>
