@@ -10,6 +10,7 @@ import Page8 from "./Page8";
 import Page9 from "./Page9";
 import Page10 from "./Page10";
 import Page11 from "./Page11";
+import Footer from "./Footer";
 
 const Main = () => {
     return(
@@ -25,6 +26,7 @@ const Main = () => {
             <Page9 />
             <Page10 />
             <Page11 />
+            <Footer />
         </>
     )
 }
