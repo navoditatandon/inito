@@ -2,6 +2,7 @@
   "name": "my-inito",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/navoditatandon/inito",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -34,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "glob": "^10.4.3",
+    "inflight": "^1.0.6",
+    "rimraf": "^5.0.8"
   }
 }
