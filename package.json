@@ -2,7 +2,7 @@
   "name": "my-inito",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/navoditatandon/inito",
+  "homepage": "https://mynewinito.netlify.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -39,6 +39,7 @@
   "devDependencies": {
     "glob": "^10.4.3",
     "inflight": "^1.0.6",
+    "netlify-cli": "^17.33.0",
     "rimraf": "^5.0.8"
   }
 }
