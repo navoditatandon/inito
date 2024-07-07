@@ -28,10 +28,10 @@ const FooterMobile = () => {
                         </div>
                     </div>
                     <ul className={`footer-list ${activeSection === 0 ? 'active' : ''}`}>
-                        <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Blog</li>
-                        <li>Contact Us</li>
+                        <li href = "https://www.inito.com/about-us">About Us</li>
+                        <li href = "https://www.inito.com/careers">Careers</li>
+                        <li href = "https://blog.inito.com/">Blog</li>
+                        <li href = "https://www.inito.com/contact-us">Contact Us</li>
                     </ul>
                 </div>
                 <div className="footer-section" onClick={() => toggleAccordion(1)}>
@@ -42,7 +42,7 @@ const FooterMobile = () => {
                         </div>
                     </div>
                     <ul className={`footer-list ${activeSection === 1 ? 'active' : ''}`}>
-                        <li>FAQ</li>
+                        <li href="https://www.inito.com/faqs">FAQ</li>
                         <li>Terms</li>
                         <li>Privacy Policy</li>
                         <li>Return and Warranty</li>

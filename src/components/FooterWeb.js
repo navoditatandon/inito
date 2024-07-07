@@ -12,16 +12,16 @@ const FooterWeb = () => {
                 <div className="footer-column-web">
                     <h3 className="footer-heading-web">Company</h3>
                     <ul className="footer-list-web">
-                        <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Blog</li>
-                        <li>Contact Us</li>
+                        <li href = "https://www.inito.com/about-us">About Us</li>
+                        <li href = "https://www.inito.com/careers">Careers</li>
+                        <li href = "https://blog.inito.com/">Blog</li>
+                        <li href = "https://www.inito.com/contact-us">Contact Us</li>
                     </ul>
                 </div>
                 <div className="footer-column-web">
                     <h3 className="footer-heading-web">Support</h3>
                     <ul className="footer-list-web">
-                        <li>FAQ</li>
+                        <li href="https://www.inito.com/faqs">FAQ</li>
                         <li>Terms</li>
                         <li>Privacy Policy</li>
                         <li>Return and Warranty</li>
