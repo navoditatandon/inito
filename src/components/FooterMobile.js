@@ -5,6 +5,9 @@ import LinkedIn from '../svgs/LinkedIn';
 import Youtube from '../svgs/Youtube';
 import './FooterMobile.css';
 
+
+// just as we linked buttons we can links these refs as well
+
 const FooterMobile = () => {
     const [activeSection, setActiveSection] = useState(null);
 
